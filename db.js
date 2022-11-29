@@ -18,7 +18,7 @@ function insertUser(user){
 
 function updateUser(id, user){
 
-    return global.users.array.forEach((item, index, array) => {
+    return global.users.forEach((item, index, array) => {
         if (item.id === id){
             user.id = id;
             array [index] = user; 
