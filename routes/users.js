@@ -4,7 +4,7 @@ const db = require("../db");
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.json(db.findUsers());
+  res.json(db.findUser());
  
 });
 

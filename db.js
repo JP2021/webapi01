@@ -1,15 +1,19 @@
 const {v4} = require ("uuid");
 global.users = [];
 
-function findUsers(){
+function findUser(){
     return global.users;
+   
 }
 function findUsers(id){
     return global.users.find(item => item.id === id);
+    
 } 
 function insertUser(user){
     user.id = v4();
+    console.log(user.id)
     global.users.push(user);
+    console.log(global.users)
 }
 
 function updateUser(id, user){
@@ -36,6 +40,6 @@ function deleteUser(id){
 }
 
 module.exports = {
-    findUsers, insertUser,
-    updateUser, deleteUser
+    findUser, insertUser,
+    updateUser, deleteUser,findUsers
 }
