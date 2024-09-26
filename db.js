@@ -15,6 +15,7 @@ function insertUser(user){
     global.users.push(user);
     console.log(global.users)
 }
+//
 
 function updateUser(id, user){
 
